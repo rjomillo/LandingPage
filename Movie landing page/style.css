@@ -1,0 +1,129 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font size */
+html {
+  font-size: 25px;
+}
+
+/* Apply styles to the whole page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Section Styles */
+.banner {
+  background-image: url("pictures/bg1.jpg");
+  padding: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+
+/* Logo Styles */
+.logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 80%;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 60%;
+    top: 2px;
+    right: 2px;
+  }
+}
+
+
+/* Content Styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content p {
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    align-items: flex-start;
+  }
+}
+
+/* Button Styles */
+.playbtn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+}
+
+.playbtn img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Review and About Styles */
+.review,
+.about {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.review:hover,
+.about:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+
+  .playbtn,
+  .review,
+  .about {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
